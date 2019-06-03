@@ -2,7 +2,7 @@
 
 ngx_version=nginx-1.16.0
 
-apt-get install -y libpam0g-dev
+apt-get install -y libpam0g-dev libtool
 
 if [ ! -d /build ]; then
 	mkdir /build
