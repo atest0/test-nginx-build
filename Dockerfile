@@ -31,7 +31,7 @@ ADD run.sh /run.sh
 RUN chmod +x /*.sh
 
 SHELL ["/bin/bash", "-c"]
-RUN ngx.sh
+RUN /ngx.sh
 
 
 RUN echo "syntax on\nset number\nset ruler\n" >> /etc/vim/vimrc
