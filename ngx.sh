@@ -2,7 +2,7 @@
 
 ngx_version=nginx-1.16.0
 
-apt-get install -y libpam0g-dev libtool
+apt-get install -y libpam0g-dev libtool automake
 
 if [ ! -d /build ]; then
 	mkdir /build
