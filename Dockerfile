@@ -30,6 +30,7 @@ Add ngx.sh /ngx.sh
 ADD run.sh /run.sh
 RUN chmod +x /*.sh
 
+SHELL ["/bin/bash", "-c"]
 RUN ngx.sh
 
 
