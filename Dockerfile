@@ -27,11 +27,13 @@ RUN apt-get clean
 
 
 Add ngx.sh /ngx.sh
+Add ngx_make.sh /ngx_make.sh
 ADD run.sh /run.sh
 RUN chmod +x /*.sh
 
 SHELL ["/bin/bash", "-c"]
 RUN /ngx.sh
+RUN /ngx_make.sh
 
 
 RUN echo "syntax on\nset number\nset ruler\n" >> /etc/vim/vimrc
