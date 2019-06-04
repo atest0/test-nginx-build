@@ -1,6 +1,8 @@
 #!/bin/bash
 
 
+cd /build/nginx*/
+
 ./configure \
 --prefix=/usr/share/nginx \
 --conf-path=/etc/nginx/nginx.conf \
