@@ -36,7 +36,7 @@ RUN /ngx.sh
 RUN /ngx_make.sh
 
 
-RUN echo "syntax on\nset number\nset ruler\n" >> /etc/vim/vimrc
+RUN echo -e "syntax on\nset number\nset ruler\n" >> /etc/vim/vimrc
 
 EXPOSE 80 8080 22
 
